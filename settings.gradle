@@ -1,0 +1,15 @@
+/*
+ * Copyright (c) 2019 Haulmont Technology Ltd. All Rights Reserved.
+ * Haulmont Technology proprietary and confidential.
+ * Use is subject to license terms.
+ */
+
+rootProject.name = 'CarDealer'
+include(':cardealer-global', ':cardealer-core', ':cardealer-gui',
+        ':cardealer-web', ':cardealer-portal', ':cardealer-mobile', ':cardealer-mobile-rest')
+project(':cardealer-global').projectDir = new File(settingsDir, 'modules/global')
+project(':cardealer-core').projectDir = new File(settingsDir, 'modules/core')
+project(':cardealer-gui').projectDir = new File(settingsDir, 'modules/gui')
+project(':cardealer-web').projectDir = new File(settingsDir, 'modules/web')
+project(':cardealer-portal').projectDir = new File(settingsDir, 'modules/portal')
+project(':cardealer-mobile-rest').projectDir = new File(settingsDir, 'modules/mobile-rest')
